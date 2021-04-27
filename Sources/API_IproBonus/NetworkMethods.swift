@@ -26,7 +26,7 @@ public class NetworkService {
             "idClient": idClient,
             "paramValue": idDevice
         ]
-        let jsonData = try! JSONSerialization.data(withJSONObject: json, options: [])
+        let jsonData = try? JSONSerialization.data(withJSONObject: json, options: [])
         
         
         var request = URLRequest(url: url)
